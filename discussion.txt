@@ -1,0 +1,37 @@
+RECURSION:
+
+1. Recursion is function that calls itself. 
+2. Base case is required for the recursion function to know when to stop running. Without a base case, the function will run indefinitely. 
+
+GRAPH:
+1. Graphs are trees that contain loops. And relations between nodes can be directed or non-directed.
+2. Trees are acyclic and directed. Whereas graphs can be acyclic or cyclic and directed or non-directed. 
+3. Social networks showing who is connected to who.
+
+
+Data Structure             Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)         O(1)    O(n)    O(1)    O(n)    O(n)   O(1)    
+Linked List                 O(n)    o(n)    O(1)    O(1)    O(1)   O(n)
+Doubly-Linked List          O(n)    O(n)    O(1)    O(1)    O(1)   O(1)
+Queue (as Array)             X        X       X       X     O(n)   O(1) 
+Queue (as LL or DLL)         X        X       X       X     O(1)   O(1)
+Stack (as Array, LL, or DLL) X        X       X       X     O(1)   O(1)
+Deque (as DLL)               X        X     O(1)    O(1)    O(1)   O(1)      
+
+
+
+Data Structure            Get     Add     Delete  Iterate Memory
+Dictionary (Hash Map)     O(1)    O(1)    O(1)    O(n)    medium
+Set (Hash Map)            O(1)    O(1)    O(1)    O(n)    medium 
+Binary Search Tree        O(logn) O(n)    O(n)    O(1)    low                 
+Tree                      O(n)    O(1)    O(1)    O(1)    low              
+
+
+SORTING: 
+1. Bubble Sort algorithm compares adjacent numbers two at a time and floating the larger number to the right.
+2. Merge Sort algorithm starts with two sorted lists. Merged into a new list by comparing the first element of each sorted list and appending to the new list the lowest number until the both the lists are empty. 
+3. Quick Sort algorithm partitions an array and then calls itself recursively twice to sort the resulting two subarray.
+
+GIT BRANCHING:
+1. Using git branching is useful while working in teams. Each branch can be for one team and when work is ready for release, it can be merged with the master.
+2. Pull request is a request for a user to another user's repository to one's contribute code to another user's repository.
