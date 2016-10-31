@@ -19,6 +19,13 @@ def print_item(my_list, i=0):
     i = i + 1
     print_item(my_list,i)
 
+    # GIVEN SOLUTION
+    # if not my_list:
+    #     return
+    # else:
+    #     print my_list[0]
+    #     print_item(my_list[1:])
+
 # 2. Write a function that uses recursion to print each node in a tree.
 
 def print_all_tree_data(tree):
@@ -93,13 +100,21 @@ def num_nodes(tree):
         3
     """
 
-    ##### REFORMAT RECURSIVELY??!!!
+    if not tree.children:
+        return 1
 
-    if not tree:
-        return 0
+    count = 1
+    for child in tree.children:
+        count += num_nodes(child)
 
-    for i in tree.children:
-        return 1 + len(tree.children)
+    return count
+
+    #NON RECURSION SOLUTION
+    # if not tree:
+    #     return 0
+
+    # for i in tree.children:
+    #     return 1 + len(tree.children)
 
 
 #####################################################################
